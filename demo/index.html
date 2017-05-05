@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Drag &amp; Drop File Input</title>
+</head>
+<body>
+
+<form action="" method="post" enctype="multipart/form-data">
+
+    <div class="dnd-file-input">
+        <input type="file" name="test1">
+    </div>
+
+    <div class="dnd-file-input">
+        <input type="file" name="test2">
+    </div>
+
+    <div class="dnd-file-input" data-current="hound.png">
+        <input type="file" name="test3">
+    </div>
+
+    <p><input type="submit"></p>
+
+</form>
+
+<script src="../src/dnd-file-input.js"></script>
+<script>
+    DndFileInput.loadStyles();
+</script>
+
+<!--
+<?php if($_FILES) { printf("<p><pre>%s</pre></p>", htmlspecialchars(print_r($_FILES, true), ENT_COMPAT, 'UTF-8')); }; ?>
+-->
+
+</body>
+</html>
